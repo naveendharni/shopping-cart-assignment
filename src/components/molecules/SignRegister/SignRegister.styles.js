@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { breakPoints } from "components/LoginBody/LoginBody.styles";
+import { breakPoints } from "components/organisms/LoginBody/LoginBody.styles";
 
-export const Container = styled.div`
+export const Container = styled.nav`
   position: absolute;
   right: 12.5rem;
   top: 0;

@@ -1,16 +1,16 @@
 import { memo } from "react";
 import { Container } from "./SignRegister.styles";
-import { Link } from "react-router-dom";
+import NavLink from "components/atoms/Links/Links";
 
 const SignRegister = () => {
   return (
     <Container>
-      <Link className="links" to="/">
+      <NavLink classes="links" url="/">
         SignIn
-      </Link>
-      <Link className="links" to="/register">
+      </NavLink>
+      <NavLink classes="links" url="/register">
         Register
-      </Link>
+      </NavLink>
     </Container>
   );
 };

@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 import { createBrowserHistory } from "history";
 
 import PrivateRoute from "components/Shared/PrivateRoute";
-import Header from "components/Header/Header";
-import Copyright from "components/Shared/Copyright";
+import Header from "components/organisms/Header/Header";
+import Copyright from "components/organisms/Footer/Copyright";
 import Login from "components/pages/Login";
 import Register from "components/pages/Register";
 import Home from "components/pages/Home";

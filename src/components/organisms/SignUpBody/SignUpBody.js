@@ -2,7 +2,7 @@ import { useState, memo } from "react";
 import TextField from "@material-ui/core/TextField";
 import { useForm, Controller } from "react-hook-form";
 
-import LeftCard from "components/Shared/LeftCard";
+import LeftCard from "components/molecules/LeftCard/LeftCard";
 import CustomButton from "components/atoms/Buttons/CustomButton";
 import { Container, RightBody } from "./SignUpBody.styles";
 import { signIn } from "helpers/saveUser";

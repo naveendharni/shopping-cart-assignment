@@ -1,7 +1,7 @@
 import { memo } from "react";
-import Navigation from "components/Shared/Navigation";
+import Navigation from "components/molecules/Navigation/Navigation";
 import CartIcon from "components/Shared/CartIcon";
-import SignRegister from "components/Shared/SignRegister";
+import SignRegister from "components/molecules/SignRegister/SignRegister";
 
 import { Container } from "./Header.styles";
 import Logo from "static/images/logo.png";

@@ -1,16 +1,16 @@
 import { memo } from "react";
 import { Container } from "./Navigation.styles";
-import { Link } from "react-router-dom";
+import NavLink from "components/atoms/Links/Links";
 
 const Navigation = () => {
   return (
     <Container>
-      <Link className="links" to="/home">
+      <NavLink classes="links" url="/home">
         Home
-      </Link>
-      <Link className="links" to="/products">
+      </NavLink>
+      <NavLink classes="links" url="/products">
         Products
-      </Link>
+      </NavLink>
     </Container>
   );
 };

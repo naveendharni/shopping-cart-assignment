@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakPoints } from "components/LoginBody/LoginBody.styles";
+import { breakPoints } from "components/organisms/LoginBody/LoginBody.styles";
 
 export const Container = styled.header`
   box-shadow: 0px 3px 6px rgb(175 175 175 / 40%);

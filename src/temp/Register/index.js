@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { signOut } from "helpers/saveUser";
-import SignUpBody from "components/SignUpBody/SignUpBody";
+import SignUpBody from "components/organisms/SignUpBody/SignUpBody";
 import { Container } from "./Register.styles";
 
 const Register = () => {

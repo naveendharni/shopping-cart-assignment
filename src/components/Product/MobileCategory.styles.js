@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakPoints } from "components/LoginBody/LoginBody.styles";
+import { breakPoints } from "components/organisms/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   .MuiFilledInput-root,
