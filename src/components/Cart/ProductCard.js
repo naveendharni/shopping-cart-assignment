@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addProduct, removeProduct } from "store/product/productSlice";
+import { addProduct, removeProduct } from "store/cart/cartSlice";
 import { CartProduct } from "./ProductCard.styles";
 import getImage from "helpers/getImage";
 

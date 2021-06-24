@@ -2,8 +2,10 @@ import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 import { createLogger } from "redux-logger";
 
-import homeReducer from "store/home/homeSlice";
+import offersReducer from "store/offers/offersSlice";
+import categoriesReducer from "store/categories/categoriesSlice";
 import productReducer from "store/product/productSlice";
+import cartReducer from "store/cart/cartSlice";
 
 const middleware = [
   /* YOUR CUSTOM MIDDLEWARES HERE */
@@ -14,8 +16,10 @@ const logger = createLogger({});
 middleware.push(logger);
 
 const combinedReducer = combineReducers({
-  home: homeReducer,
+  offers: offersReducer,
   product: productReducer,
+  categories: categoriesReducer,
+  cart: cartReducer,
 });
 
 const rootReducer = (state, action) => {

@@ -1,7 +1,7 @@
 import { useEffect, memo, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { getCategories } from "store/home/homeSlice";
+import { getCategories } from "store/categories/categoriesSlice";
 import { getProducts } from "store/product/productSlice";
 
 import Sidebar from "components/Product/Sidebar";

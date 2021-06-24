@@ -7,7 +7,7 @@ import Select from "@material-ui/core/Select";
 import { Container } from "./MobileCategory.styles";
 
 const MobileCategory = ({ active, changeFilter }) => {
-  const { categories } = useSelector((state) => state.home);
+  const { categories } = useSelector((state) => state.categories);
 
   return (
     <Container>

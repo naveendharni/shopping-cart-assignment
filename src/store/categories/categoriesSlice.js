@@ -1,15 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import fetchOffers, { fetchCategories } from "services/home";
-
-// fetch all the offers
-export const getOffers = createAsyncThunk("homepage/getOffers", async () => {
-  try {
-    const res = await fetchOffers();
-    return res;
-  } catch (error) {
-    throw new Error(error?.message ?? "Get offer details failed");
-  }
-});
+import fetchCategories from "services/categories";
 
 // fetch all the categories
 export const getCategories = createAsyncThunk(
@@ -27,29 +17,14 @@ export const getCategories = createAsyncThunk(
 const initialState = {
   isLoading: false,
   isError: null,
-  offers: [],
   categories: [],
 };
 
-const homeSlice = createSlice({
-  name: "home",
+const categoriesSlice = createSlice({
+  name: "categories",
   initialState,
   reducers: {},
   extraReducers: {
-    [getOffers.pending]: (state) => {
-      state.isLoading = true;
-      state.offers = [];
-      state.isError = null;
-    },
-    [getOffers.fulfilled]: (state, action) => {
-      state.isLoading = false;
-      state.offers = action.payload;
-      state.isError = null;
-    },
-    [getOffers.rejected]: (state, action) => {
-      state.isLoading = false;
-      state.isError = action.error.message;
-    },
     [getCategories.pending]: (state) => {
       state.isLoading = true;
       state.categories = [];
@@ -67,5 +42,5 @@ const homeSlice = createSlice({
   },
 });
 
-const { reducer } = homeSlice;
+const { reducer } = categoriesSlice;
 export default reducer;

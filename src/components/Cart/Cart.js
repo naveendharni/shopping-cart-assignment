@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { toggleCart } from "store/product/productSlice";
+import { toggleCart } from "store/cart/cartSlice";
 import { Container } from "./Cart.styles";
 import CartHeader from "./CartHeader";
 import NoItem from "./NoItem";
@@ -9,7 +9,7 @@ import CartFooter from "./CartFooter";
 const Cart = () => {
   const dispatch = useDispatch();
   const { totalProducts, totalPrice, cartItems } = useSelector(
-    (state) => state.product
+    (state) => state.cart
   );
 
   const closeCart = () => dispatch(toggleCart());

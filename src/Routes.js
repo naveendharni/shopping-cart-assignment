@@ -15,7 +15,7 @@ import NotFound from "components/Shared/NotFound";
 export const history = createBrowserHistory();
 
 function Routes() {
-  const { isCartShow } = useSelector((state) => state.product);
+  const { isCartShow } = useSelector((state) => state.cart);
   return (
     <Router history={history}>
       <Header />
