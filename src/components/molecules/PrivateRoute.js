@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { saveUser } from "store/cart/cartSlice";
 import { Route, Redirect } from "react-router-dom";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
-  const isAuthenticated = localStorage.getItem("user");
+const PrivateRoute = ({
+  component: Component,
+  isAuthenticated,
+  fallback,
+  ...rest
+}) => {
+  const dispatch = useDispatch();
+  const isAuth = localStorage.getItem("user");
+
+  useEffect(() => {
+    dispatch(saveUser(isAuth));
+  }, [isAuth]);
+
   return (
     <Route
       {...rest}
@@ -10,7 +23,9 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
         isAuthenticated ? (
           <Component {...props} />
         ) : (
-          <Redirect to={{ pathname: "", state: { from: props.location } }} />
+          <Redirect
+            to={{ pathname: fallback, state: { from: props.location } }}
+          />
         )
       }
     />

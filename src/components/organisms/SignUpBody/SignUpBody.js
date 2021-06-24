@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { useForm, Controller } from "react-hook-form";
 
@@ -122,4 +122,4 @@ const SignUpBody = () => {
   );
 };
 
-export default memo(SignUpBody);
+export default SignUpBody;

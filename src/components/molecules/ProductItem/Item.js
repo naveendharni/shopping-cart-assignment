@@ -1,4 +1,4 @@
-import { memo } from "react";
+// import { memo } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "store/cart/cartSlice";
 import Images from "components/atoms/Image/Images";
@@ -41,4 +41,4 @@ export const BuyBtn = ({ view, addToCart, price }) => (
   </div>
 );
 
-export default memo(Item);
+export default Item;

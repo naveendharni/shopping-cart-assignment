@@ -15,15 +15,39 @@ import NotFound from "components/atoms/NotFound/NotFound";
 export const history = createBrowserHistory();
 
 function Routes() {
-  const { isCartShow } = useSelector((state) => state.cart);
+  const { isCartShow, isUser } = useSelector((state) => state.cart);
   return (
     <Router history={history}>
       <Header />
       <Switch>
-        <Route exact path="/" component={Login} />
-        <Route exact path="/register" component={Register} />
-        <PrivateRoute exact path="/home" component={Home} />
-        <PrivateRoute exact path="/products" component={Product} />
+        <PrivateRoute
+          isAuthenticated={!isUser}
+          fallback="/home"
+          exact
+          path="/"
+          component={Login}
+        />
+        <PrivateRoute
+          isAuthenticated={!isUser}
+          fallback="/home"
+          exact
+          path="/register"
+          component={Register}
+        />
+        <PrivateRoute
+          isAuthenticated={isUser}
+          fallback="/"
+          exact
+          path="/home"
+          component={Home}
+        />
+        <PrivateRoute
+          isAuthenticated={isUser}
+          fallback="/"
+          exact
+          path="/products"
+          component={Product}
+        />
         <Route path="*" exact={true} component={NotFound} />
       </Switch>
       <Copyright />

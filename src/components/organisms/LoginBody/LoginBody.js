@@ -1,4 +1,4 @@
-import { memo } from "react";
+// import { memo } from "react";
 import TextField from "@material-ui/core/TextField";
 import { useForm, Controller } from "react-hook-form";
 
@@ -74,4 +74,4 @@ const LoginBody = () => {
   );
 };
 
-export default memo(LoginBody);
+export default LoginBody;

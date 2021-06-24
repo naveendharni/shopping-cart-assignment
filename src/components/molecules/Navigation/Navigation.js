@@ -1,4 +1,4 @@
-import { memo } from "react";
+// import { memo } from "react";
 import { Container } from "./Navigation.styles";
 import NavLink from "components/atoms/Links/Links";
 
@@ -15,4 +15,4 @@ const Navigation = () => {
   );
 };
 
-export default memo(Navigation);
+export default Navigation;

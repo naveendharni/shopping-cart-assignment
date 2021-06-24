@@ -1,4 +1,4 @@
-import { memo } from "react";
+// import { memo } from "react";
 import { Container } from "./Copyright.styles";
 
 const Copyright = () => {
@@ -9,4 +9,4 @@ const Copyright = () => {
   );
 };
 
-export default memo(Copyright);
+export default Copyright;

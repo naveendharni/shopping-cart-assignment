@@ -11,6 +11,7 @@ export const Container = styled.nav`
     text-decoration: none;
     color: #000000;
     margin-right: 1rem;
+    cursor: pointer;
   }
   @media (max-width: ${breakPoints.tabletBreak}) {
     right: 0;

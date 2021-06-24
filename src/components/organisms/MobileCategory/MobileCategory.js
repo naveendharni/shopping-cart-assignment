@@ -1,4 +1,4 @@
-import { memo } from "react";
+// import { memo } from "react";
 import { useSelector } from "react-redux";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
@@ -30,4 +30,4 @@ const MobileCategory = ({ active, changeFilter }) => {
   );
 };
 
-export default memo(MobileCategory);
+export default MobileCategory;

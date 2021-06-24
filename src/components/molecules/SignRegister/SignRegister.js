@@ -1,18 +1,30 @@
-import { memo } from "react";
+// // import { memo } from "react";
 import { Container } from "./SignRegister.styles";
+import { signOut } from "helpers/saveUser";
 import NavLink from "components/atoms/Links/Links";
 
 const SignRegister = () => {
+  const isAuthenticated = localStorage.getItem("user");
+
+  console.log({ isAuthenticated });
   return (
     <Container>
-      <NavLink classes="links" url="/">
-        SignIn
-      </NavLink>
-      <NavLink classes="links" url="/register">
-        Register
-      </NavLink>
+      {isAuthenticated ? (
+        <div className="links" onClick={signOut}>
+          SignOut
+        </div>
+      ) : (
+        <>
+          <NavLink classes="links" url="/">
+            SignIn
+          </NavLink>
+          <NavLink classes="links" url="/register">
+            Register
+          </NavLink>{" "}
+        </>
+      )}
     </Container>
   );
 };
 
-export default memo(SignRegister);
+export default SignRegister;

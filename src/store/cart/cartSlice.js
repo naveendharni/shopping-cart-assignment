@@ -25,6 +25,7 @@ const initialState = {
   isCartShow: false,
   totalProducts: 0,
   totalPrice: 0,
+  isUser: "",
 };
 
 const cartSlice = createSlice({
@@ -44,6 +45,9 @@ const cartSlice = createSlice({
     },
     toggleCart: (state) => {
       state.isCartShow = !state.isCartShow;
+    },
+    saveUser: (state, action) => {
+      state.isUser = action.payload;
     },
   },
   extraReducers: {
@@ -76,5 +80,5 @@ const cartSlice = createSlice({
 });
 
 const { reducer, actions } = cartSlice;
-export const { removeProduct, toggleCart } = actions;
+export const { removeProduct, toggleCart, saveUser } = actions;
 export default reducer;

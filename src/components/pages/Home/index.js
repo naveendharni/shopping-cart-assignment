@@ -1,4 +1,4 @@
-import { useEffect, memo } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getOffers } from "store/offers/offersSlice";
 import { getCategories } from "store/categories/categoriesSlice";
@@ -26,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default memo(Home);
+export default Home;

@@ -1,10 +1,10 @@
-import { memo } from "react";
+// import { memo } from "react";
 import { useSelector } from "react-redux";
 import { Container, CategoryItem } from "./Sidebar.styles";
 
 const Sidebar = ({ active, changeFilter }) => {
   const { categories } = useSelector((state) => state.categories);
-  
+
   return (
     <Container>
       {categories.map((item) => (
@@ -20,4 +20,4 @@ const Sidebar = ({ active, changeFilter }) => {
   );
 };
 
-export default memo(Sidebar);
+export default Sidebar;

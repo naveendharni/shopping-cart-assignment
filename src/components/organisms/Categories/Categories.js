@@ -1,4 +1,4 @@
-import { memo } from "react";
+// import { memo } from "react";
 import CategoryItem from "components/molecules/CategoryItems/CategoryItem";
 import { Container } from "./Categories.styles";
 
@@ -12,4 +12,4 @@ const Categories = ({ data }) => {
   );
 };
 
-export default memo(Categories);
+export default Categories;

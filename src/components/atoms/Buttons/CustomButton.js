@@ -1,4 +1,3 @@
-import { memo } from "react";
 import Button from "@material-ui/core/Button";
 
 const CustomButton = ({ title, classes, onClick }) => {
@@ -15,4 +14,4 @@ const CustomButton = ({ title, classes, onClick }) => {
   );
 };
 
-export default memo(CustomButton);
+export default CustomButton;

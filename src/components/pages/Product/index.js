@@ -1,4 +1,4 @@
-import { useEffect, memo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { getCategories } from "store/categories/categoriesSlice";
@@ -49,4 +49,4 @@ const Product = () => {
   );
 };
 
-export default memo(Product);
+export default Product;
