@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   padding: 0.5rem 0 0;
@@ -30,7 +31,7 @@ export const CategoryRow = styled.div`
       font-weight: 600;
       font-size: 1rem;
     }
-    @media (max-width: 650px) {
+    @media (max-width: ${breakPoints.mobileBreak}) {
       div {
         font-size: 0.5rem;
       }

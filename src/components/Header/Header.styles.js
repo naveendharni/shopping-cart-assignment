@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.header`
   box-shadow: 0px 3px 6px rgb(175 175 175 / 40%);
@@ -17,13 +18,13 @@ export const Container = styled.header`
     width: 9rem;
     margin-bottom: 0.5rem;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     justify-content: space-between;
     .logo {
       width: 8rem;
     }
   }
-  @media (max-width: 650px) {
+  @media (max-width: ${breakPoints.mobileBreak}) {
     /* height: auto; */
     .logo {
       width: 6rem;

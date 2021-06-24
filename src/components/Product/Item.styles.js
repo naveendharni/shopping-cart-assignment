@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   width: 200px;
@@ -32,10 +33,10 @@ export const Container = styled.div`
   .mobile-footer {
     display: none;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: ${breakPoints.laptopBreak}) {
     width: 190px;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     width: 45%;
     .product-wrap {
       display: flex;
@@ -57,7 +58,7 @@ export const Container = styled.div`
       width: 100%;
     }
   }
-  @media (max-width: 650px) {
+  @media (max-width: ${breakPoints.mobileBreak}) {
     width: 90%;
     justify-content: center;
     .product-wrap img {

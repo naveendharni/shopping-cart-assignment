@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   background-color: #000000;
@@ -20,7 +21,7 @@ export const Container = styled.div`
     font-size: 0.8rem;
     cursor: pointer;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     background-color: #ffffff;
     color: #000000;
     .close-cart {

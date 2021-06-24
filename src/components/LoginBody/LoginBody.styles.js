@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
+export const breakPoints = {
+  mobileBreak: "650px",
+  tabletBreak: "990px",
+  laptopBreak: "1100px",
+};
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-  @media (max-width: 650px) {
-    flex-direction: column;
+  @media (max-width: ${breakPoints.mobileBreak}) {
+    flex-direction: var(--fd);
     align-items: center;
   }
 `;
@@ -26,11 +32,11 @@ export const RightBody = styled.div`
   .confirm-btn {
     margin-top: 2rem;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     margin-left: 2rem;
     width: 35%;
   }
-  @media (max-width: 650px) {
+  @media (max-width: ${breakPoints.mobileBreak}) {
     margin-left: 0rem;
     width: 80%;
   }

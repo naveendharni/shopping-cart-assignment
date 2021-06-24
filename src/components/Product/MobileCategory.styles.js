@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   .MuiFilledInput-root,
@@ -21,7 +22,7 @@ export const Container = styled.div`
   .MuiSelect-icon {
     color: #ffffff;
   }
-  @media (min-width: 650px) {
+  @media (min-width: ${breakPoints.mobileBreak}) {
     display: none;
   }
 `;

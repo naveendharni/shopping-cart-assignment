@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   background: lightgray;
@@ -6,7 +7,7 @@ export const Container = styled.div`
   font-weight: 600;
   z-index: 2;
   position: relative;
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     padding: 0.8rem 0;
     text-align: center;
   }

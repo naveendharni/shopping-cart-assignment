@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   position: absolute;
@@ -11,10 +12,10 @@ export const Container = styled.div`
     color: #000000;
     margin-right: 1rem;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     right: 0;
   }
-  @media (max-width: 650px) {
+  @media (max-width: ${breakPoints.mobileBreak}) {
     display: none;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   width: 210px;
@@ -11,16 +12,16 @@ export const Container = styled.div`
   align-items: flex-start;
   position: fixed;
   z-index: 2;
-  @media (max-width: 1100px) {
+  @media (max-width: ${breakPoints.laptopBreak}) {
     width: 200px;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     width: 180px;
   }
   @media (max-width: 800px) {
     width: 160px;
   }
-  @media (max-width: 650px) {
+  @media (max-width: ${breakPoints.mobileBreak}) {
     display: none;
   }
 `;

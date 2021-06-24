@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   position: fixed;
@@ -24,7 +25,7 @@ export const Container = styled.div`
     bottom: 0;
     right: 10%;
   }
-  @media (max-width: 990px) {
+  @media (max-width: ${breakPoints.tabletBreak}) {
     background-color: transparent;
     pointer-events: none;
     .wrapper {
