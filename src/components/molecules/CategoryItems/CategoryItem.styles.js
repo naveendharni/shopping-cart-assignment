@@ -24,7 +24,8 @@ export const CategoryRow = styled.div`
     justify-content: space-evenly;
     width: 105%;
     height: 160px;
-    div {
+    .detail-name,
+    .detail-desc {
       font-size: 0.8rem;
     }
     .detail-name {
@@ -32,7 +33,8 @@ export const CategoryRow = styled.div`
       font-size: 1rem;
     }
     @media (max-width: ${breakPoints.mobileBreak}) {
-      div {
+      .detail-name,
+      .detail-desc {
         font-size: 0.5rem;
       }
     }

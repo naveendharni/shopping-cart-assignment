@@ -1,5 +1,5 @@
 import { memo } from "react";
-import CategoryItem from "components/Home/CategoryItem";
+import CategoryItem from "components/molecules/CategoryItems/CategoryItem";
 import { Container } from "./Categories.styles";
 
 const Categories = ({ data }) => {

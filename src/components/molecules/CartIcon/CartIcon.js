@@ -1,6 +1,7 @@
 import { memo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "store/cart/cartSlice";
+import Images from "components/atoms/Image/Images";
 import { Container } from "./CartIcon.styles";
 import Cart from "static/images/cart.svg";
 
@@ -11,7 +12,7 @@ const CartIcon = () => {
 
   return (
     <Container onClick={openCart}>
-      <img src={Cart} alt="cart-icon" />
+      <Images src={Cart} alt="cart-icon" />
       <span>{totalProducts} items</span>
     </Container>
   );

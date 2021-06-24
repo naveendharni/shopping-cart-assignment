@@ -10,7 +10,7 @@ import Register from "components/pages/Register";
 import Home from "components/pages/Home";
 import Product from "components/pages/Product";
 import Cart from "components/Cart/Cart";
-import NotFound from "components/Shared/NotFound";
+import NotFound from "components/atoms/NotFound/NotFound";
 
 export const history = createBrowserHistory();
 

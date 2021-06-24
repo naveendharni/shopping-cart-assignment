@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getOffers } from "store/offers/offersSlice";
 import { getCategories } from "store/categories/categoriesSlice";
 
-import Banner from "components/Home/Banner";
+import Banner from "components/organisms/Banner/Banner";
 import Categories from "components/Home/Categories";
 import { Container } from "./Home.styles";
 

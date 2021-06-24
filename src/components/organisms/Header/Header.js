@@ -1,6 +1,6 @@
 import { memo } from "react";
 import Navigation from "components/molecules/Navigation/Navigation";
-import CartIcon from "components/Shared/CartIcon";
+import CartIcon from "components/molecules/CartIcon/CartIcon";
 import SignRegister from "components/molecules/SignRegister/SignRegister";
 
 import { Container } from "./Header.styles";

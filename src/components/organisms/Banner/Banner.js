@@ -1,7 +1,7 @@
 import { memo } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import CarouselItem from "./CarouselItem";
+import CarouselItem from "components/molecules/Carousel/CarouselItem";
 
 const Banner = ({ data }) => {
   return (
