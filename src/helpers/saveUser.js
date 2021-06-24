@@ -9,4 +9,5 @@ export const signIn = (data) => {
 export const signOut = () => {
   localStorage.clear();
   store.dispatch({ type: "reset-store" });
+  history.replace("/");
 };
