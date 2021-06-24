@@ -15,19 +15,19 @@ export const Container = styled.header`
   background-color: #ffffff;
   z-index: 2;
   .logo {
-    width: 9rem;
+    width: 144px;
     margin-bottom: 0.5rem;
   }
   @media (max-width: ${breakPoints.tabletBreak}) {
     justify-content: space-between;
     .logo {
-      width: 8rem;
+      width: 128px;
     }
   }
   @media (max-width: ${breakPoints.mobileBreak}) {
     /* height: auto; */
     .logo {
-      width: 6rem;
+      width: 96px;
     }
   }
 `;
