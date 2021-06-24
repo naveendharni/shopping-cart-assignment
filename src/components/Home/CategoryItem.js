@@ -1,4 +1,4 @@
-import CustomButton from "components/Shared/CustomButton";
+import CustomButton from "components/atoms/Buttons/CustomButton";
 import { CategoryRow } from "./CategoryItem.styles";
 import getImage from "helpers/getImage";
 

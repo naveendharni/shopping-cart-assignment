@@ -5,10 +5,10 @@ import { createBrowserHistory } from "history";
 import PrivateRoute from "components/Shared/PrivateRoute";
 import Header from "components/Header/Header";
 import Copyright from "components/Shared/Copyright";
-import Login from "pages/Login";
-import Register from "pages/Register";
-import Home from "pages/Home";
-import Product from "pages/Product";
+import Login from "components/pages/Login";
+import Register from "components/pages/Register";
+import Home from "components/pages/Home";
+import Product from "components/pages/Product";
 import Cart from "components/Cart/Cart";
 import NotFound from "components/Shared/NotFound";
 

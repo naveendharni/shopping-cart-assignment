@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "store/cart/cartSlice";
-import CustomButton from "components/Shared/CustomButton";
+import CustomButton from "components/atoms/Buttons/CustomButton";
 import { Container } from "./Item.styles";
 import getImage from "helpers/getImage";
 

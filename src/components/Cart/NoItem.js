@@ -1,4 +1,4 @@
-import CustomButton from "components/Shared/CustomButton";
+import CustomButton from "components/atoms/Buttons/CustomButton";
 import { Container } from "./NoItem.styles";
 
 const NoItem = ({ closeCart }) => {
