@@ -8,7 +8,8 @@ export const Container = styled.header`
   font-size: 0.8rem;
   position: fixed;
   top: 0;
-  height: 85px;
+  /* height: 85px; */
+  padding: 0.5rem 0 0;
   width: 100%;
   background-color: #ffffff;
   z-index: 2;
@@ -23,7 +24,7 @@ export const Container = styled.header`
     }
   }
   @media (max-width: 650px) {
-    height: auto;
+    /* height: auto; */
     .logo {
       width: 6rem;
     }
