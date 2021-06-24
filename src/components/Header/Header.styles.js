@@ -12,7 +12,7 @@ export const Container = styled.header`
   /* height: 85px; */
   padding: 0.5rem 0 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   z-index: 2;
   .logo {
     width: 144px;

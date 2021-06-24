@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   position: absolute;
   bottom: 0;
   padding: 0.5rem;
@@ -16,7 +16,7 @@ export const Container = styled.div`
   .proceed-btn {
     background-color: #c41162;
     border-radius: 2.5px;
-    color: #ffffff;
+    color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: space-between;

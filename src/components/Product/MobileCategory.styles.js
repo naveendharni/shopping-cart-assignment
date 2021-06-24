@@ -17,10 +17,10 @@ export const Container = styled.div`
   }
   .MuiSelect-filled.MuiSelect-filled {
     padding: 1rem;
-    color: #ffffff;
+    color: var(--white-color);
   }
   .MuiSelect-icon {
-    color: #ffffff;
+    color: var(--white-color);
   }
   @media (min-width: ${breakPoints.mobileBreak}) {
     display: none;

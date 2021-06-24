@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CartProduct = styled.div`
-  background-color: #ffffff;
+  background-color: var(--white-color);
   margin: 0.5rem 0;
   padding: 0.8rem;
   display: flex;
@@ -25,7 +25,7 @@ export const CartProduct = styled.div`
         border-radius: 50%;
         background-color: #c41162;
         border: none;
-        color: #ffffff;
+        color: var(--white-color);
         cursor: pointer;
       }
       .times {

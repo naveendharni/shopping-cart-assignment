@@ -3,7 +3,7 @@ import { breakPoints } from "components/LoginBody/LoginBody.styles";
 
 export const Container = styled.div`
   background-color: #000000;
-  color: #ffffff;
+  color: var(--white-color);
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ export const Container = styled.div`
     cursor: pointer;
   }
   @media (max-width: ${breakPoints.tabletBreak}) {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     color: #000000;
     .close-cart {
       display: none;
