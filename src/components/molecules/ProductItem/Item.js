@@ -1,6 +1,7 @@
 import { memo } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "store/cart/cartSlice";
+import Images from "components/atoms/Image/Images";
 import CustomButton from "components/atoms/Buttons/CustomButton";
 import { Container } from "./Item.styles";
 import getImage from "helpers/getImage";
@@ -15,7 +16,7 @@ const Item = ({ data }) => {
     <Container>
       <h3 className="product-name">{data.name}</h3>
       <div className="product-wrap">
-        <img src={image} alt={data.name} loading="lazy" />
+        <Images src={image} alt={data.name} loading="lazy" />
         <div>
           <div className="description">{data.description}</div>
           <BuyBtn view="mobile" addToCart={addToCart} price={data.price} />

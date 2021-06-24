@@ -2,7 +2,7 @@ import { Router, Switch, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { createBrowserHistory } from "history";
 
-import PrivateRoute from "components/Shared/PrivateRoute";
+import PrivateRoute from "components/molecules/PrivateRoute";
 import Header from "components/organisms/Header/Header";
 import Copyright from "components/organisms/Footer/Copyright";
 import Login from "components/pages/Login";

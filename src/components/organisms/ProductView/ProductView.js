@@ -1,5 +1,5 @@
 import { memo } from "react";
-import Item from "./Item";
+import Item from "components/molecules/ProductItem/Item";
 import { Container } from "./ProductView.styles";
 
 const ProductView = ({ product }) => {

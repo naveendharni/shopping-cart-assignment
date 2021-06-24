@@ -4,9 +4,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { getCategories } from "store/categories/categoriesSlice";
 import { getProducts } from "store/product/productSlice";
 
-import Sidebar from "components/Product/Sidebar";
-import MobileCategory from "components/Product/MobileCategory";
-import ProductView from "components/Product/ProductView";
+import Sidebar from "components/organisms/SideBar/Sidebar";
+import MobileCategory from "components/organisms/MobileCategory/MobileCategory";
+// import ProductView from "components/Product/ProductView";
 import { Container } from "./Product.styles";
 
 const Product = () => {
@@ -44,7 +44,7 @@ const Product = () => {
     <Container>
       <Sidebar active={activeCategory} changeFilter={changeCategory} />
       <MobileCategory active={activeCategory} changeFilter={changeCategory} />
-      <ProductView product={filProducts} />
+      {/* <ProductView product={filProducts} /> */}
     </Container>
   );
 };
