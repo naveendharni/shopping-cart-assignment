@@ -51,7 +51,7 @@ function Routes() {
         <Route path="*" exact={true} component={NotFound} />
       </Switch>
       <Copyright />
-      {isCartShow && <Cart />}
+      {isCartShow && isUser && <Cart />}
     </Router>
   );
 }
