@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import Images from "components/atoms/Image/Images";
 import Low from "static/images/lowest-price.png";
 import { Container, LowPrice } from "./CartBody.styles";
 
@@ -10,7 +11,7 @@ const CartBody = ({ data }) => {
         <ProductCard key={data[item].id} data={data[item]} />
       ))}
       <LowPrice>
-        <img className="low-img" src={Low} alt="low-price" />
+        <Images className="low-img" src={Low} alt="low-price" />
         <span>You won&apos;t find it cheaper anywhere</span>
       </LowPrice>
     </Container>

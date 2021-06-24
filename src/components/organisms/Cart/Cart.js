@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "store/cart/cartSlice";
 import { Container } from "./Cart.styles";
-import CartHeader from "./CartHeader";
-import NoItem from "./NoItem";
-import CartBody from "./CartBody";
-import CartFooter from "./CartFooter";
+import CartHeader from "../../molecules/CartHeader/CartHeader";
+import NoItem from "../../molecules/NoCartItem/NoItem";
+import CartBody from "../../molecules/CartBody/CartBody";
+import CartFooter from "../../molecules/CartFooter/CartFooter";
 
 const Cart = () => {
   const dispatch = useDispatch();
