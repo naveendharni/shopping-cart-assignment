@@ -8,16 +8,18 @@ import { Container } from "./MobileCategory.styles";
 const MobileCategory = ({ active, changeFilter }) => {
   const { categories } = useSelector((state) => state.categories);
 
+  let activeKey = active;
+  if (active === "") activeKey = "all";
   return (
     <Container>
       <FormControl variant="filled">
         <Select
           labelId="demo-simple-select-filled-label"
           id="demo-simple-select-filled"
-          value={active}
+          value={activeKey}
           onChange={(e) => changeFilter(e.target.value)}
         >
-          <MenuItem value={""}>All</MenuItem>
+          <MenuItem value="all">All</MenuItem>
           {categories.map((item) => (
             <MenuItem key={item.id} value={item.id}>
               {item.name}

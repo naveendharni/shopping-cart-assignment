@@ -33,7 +33,7 @@ const Product = () => {
   }, [products, activeCategory]);
 
   const changeCategory = (id) => {
-    if (id === activeCategory) {
+    if (id === "all" || id === activeCategory) {
       setActiveCategory("");
       return;
     }

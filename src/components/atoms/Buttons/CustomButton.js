@@ -1,16 +1,15 @@
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
+import { ButtonStyle } from "./CustomButton.styles.js";
 
 const CustomButton = ({ children, classes, onClick }) => {
   return (
-    <Button
+    <ButtonStyle
       className={`confirm-btn ${classes ? classes : ""}`}
-      variant="contained"
-      color="secondary"
       type="submit"
       onClick={onClick}
     >
       {children}
-    </Button>
+    </ButtonStyle>
   );
 };
 
