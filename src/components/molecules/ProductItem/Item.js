@@ -18,25 +18,35 @@ const Item = ({ data }) => {
         <Images src={image} alt={data.name} loading="lazy" />
         <div>
           <div className="description">{data.description}</div>
-          <BuyBtn view="mobile" addToCart={addToCart} price={data.price} />
+          <div className="mobile-footer">
+            <CustomButton
+              classes="mobile-btn"
+              onClick={addToCart}
+            >{`Buy Now @ Rs.${data.price}`}</CustomButton>
+          </div>
         </div>
       </div>
       <div className="product-footer">
         <div className="price">MRP Rs.{data.price}</div>
         <CustomButton onClick={addToCart}>Buy Now</CustomButton>
       </div>
-      <BuyBtn view="tablet" addToCart={addToCart} price={data.price} />
+      <div className="tablet-footer">
+        <CustomButton
+          classes="mobile-btn"
+          onClick={addToCart}
+        >{`Buy Now @ Rs.${data.price}`}</CustomButton>
+      </div>
     </Container>
   );
 };
 
-export const BuyBtn = ({ view, addToCart, price }) => (
-  <div className={`${view}-footer`}>
-    <CustomButton
-      classes="mobile-btn"
-      onClick={addToCart}
-    >{`Buy Now @ Rs.${price}`}</CustomButton>
-  </div>
-);
+// export const BuyBtn = ({ view, addToCart, price }) => (
+//   <div className={`${view}-footer`}>
+//     <CustomButton
+//       classes="mobile-btn"
+//       onClick={addToCart}
+//     >{`Buy Now @ Rs.${price}`}</CustomButton>
+//   </div>
+// );
 
 export default Item;
