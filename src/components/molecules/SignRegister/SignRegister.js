@@ -9,17 +9,17 @@ const SignRegister = () => {
   return (
     <Container>
       {isUser ? (
-        <div className="links" onClick={signOut}>
+        <div className="container__links" onClick={signOut}>
           SignOut
         </div>
       ) : (
         <>
-          <NavLink classes="links" url="/">
+          <NavLink classes="container__links" url="/">
             SignIn
           </NavLink>
-          <NavLink classes="links" url="/register">
+          <NavLink classes="container__links" url="/register">
             Register
-          </NavLink>{" "}
+          </NavLink>
         </>
       )}
     </Container>

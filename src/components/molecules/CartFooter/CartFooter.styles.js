@@ -9,11 +9,11 @@ export const Container = styled.div`
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  .promo {
+  .container__promo {
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  .proceed-btn {
+  .container__proceed-btn {
     background-color: #c41162;
     border-radius: 2.5px;
     color: var(--white-color);

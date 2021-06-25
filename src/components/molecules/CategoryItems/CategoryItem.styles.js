@@ -14,32 +14,32 @@ export const CategoryRow = styled.div`
   flex-direction: ${(props) => props.reverse && "row-reverse"};
   position: relative;
   border-top: 1px solid #d3d3d3;
-  .detail-img {
+  .category__detail-img {
     text-align: center;
   }
-  .detail-container {
+  .category__detail-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 105%;
     height: 160px;
-    .detail-name,
-    .detail-desc {
+    .category__detail-name,
+    .category__detail-desc {
       font-size: 0.8rem;
     }
-    .detail-name {
+    .category__detail-name {
       font-weight: 600;
       font-size: 1rem;
     }
     @media (max-width: ${breakPoints.mobileBreak}) {
-      .detail-name,
-      .detail-desc {
+      .category__detail-name,
+      .category__detail-desc {
         font-size: 0.5rem;
       }
     }
   }
-  .home-btn {
+  .category__home-btn {
     text-transform: initial;
   }
 `;

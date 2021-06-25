@@ -10,16 +10,16 @@ export const CartProduct = styled.div`
   img {
     width: 15%;
   }
-  .details {
+  .card {
     width: 65%;
-    .item-name {
+    .card__name {
       font-weight: 600;
       font-size: 0.8rem;
       margin-bottom: 0.35rem;
     }
-    .item-quantity {
+    .card__quantity {
       font-size: 0.8rem;
-      .btn {
+      .card__btn {
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -28,11 +28,11 @@ export const CartProduct = styled.div`
         color: var(--white-color);
         cursor: pointer;
       }
-      .times {
+      .card__times {
         margin: 0 0.5rem;
         font-weight: 400;
       }
-      .total-item {
+      .card__total-item {
         font-weight: 600;
         margin: 0 0.5rem;
       }

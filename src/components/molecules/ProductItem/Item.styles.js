@@ -6,14 +6,14 @@ export const Container = styled.div`
   margin: 0.5rem 0.5rem 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px dotted #d3d3d3;
-  .product-name {
+  .item__product-name {
     min-height: 50px;
   }
-  .product-wrap {
-    img {
+  .item__product-wrap {
+    .item__img {
       height: 180px;
     }
-    .description {
+    .item__description {
       background-color: #d3d3d3;
       font-size: 0.8rem;
       font-weight: 600;
@@ -21,7 +21,7 @@ export const Container = styled.div`
       min-height: 85px;
     }
   }
-  .product-footer {
+  .item__product-footer {
     display: flex;
     font-size: 0.8rem;
     font-weight: 600;
@@ -29,8 +29,8 @@ export const Container = styled.div`
     align-items: center;
     padding: 0.5rem 0.2rem 0;
   }
-  .tablet-footer,
-  .mobile-footer {
+  .item__tablet-footer,
+  .item__mobile-footer {
     display: none;
   }
   @media (max-width: ${breakPoints.laptopBreak}) {
@@ -38,22 +38,22 @@ export const Container = styled.div`
   }
   @media (max-width: ${breakPoints.tabletBreak}) {
     width: 45%;
-    .product-wrap {
+    .item__product-wrap {
       display: flex;
-      img {
+      .item__img {
         height: 120px;
       }
-      .description {
+      .item__description {
         padding: 0.2rem 0.3rem;
       }
     }
-    .tablet-footer {
+    .item__tablet-footer {
       display: block;
     }
-    .product-footer {
+    .item__product-footer {
       display: none;
     }
-    .mobile-btn {
+    .item__mobile-btn {
       margin-top: 0.5rem;
       width: 100%;
     }
@@ -61,15 +61,15 @@ export const Container = styled.div`
   @media (max-width: ${breakPoints.mobileBreak}) {
     width: 90%;
     justify-content: center;
-    .product-wrap img {
+    .item__product-wrap .item__img {
       height: auto;
       width: 40%;
       margin-right: 1rem;
     }
-    .mobile-footer {
+    .item__mobile-footer {
       display: block;
     }
-    .tablet-footer {
+    .item__tablet-footer {
       display: none;
     }
   }

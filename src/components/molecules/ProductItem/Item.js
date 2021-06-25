@@ -13,26 +13,31 @@ const Item = ({ data }) => {
   };
   return (
     <Container>
-      <h3 className="product-name">{data.name}</h3>
-      <div className="product-wrap">
-        <Images src={image} alt={data.name} loading="lazy" />
+      <h3 className="item__product-name">{data.name}</h3>
+      <div className="item__product-wrap">
+        <Images
+          src={image}
+          alt={data.name}
+          className="item__img"
+          loading="lazy"
+        />
         <div>
-          <div className="description">{data.description}</div>
-          <div className="mobile-footer">
+          <div className="item__description">{data.description}</div>
+          <div className="item__mobile-footer">
             <CustomButton
-              classes="mobile-btn"
+              classes="item__mobile-btn"
               onClick={addToCart}
             >{`Buy Now @ Rs.${data.price}`}</CustomButton>
           </div>
         </div>
       </div>
-      <div className="product-footer">
-        <div className="price">MRP Rs.{data.price}</div>
+      <div className="item__product-footer">
+        <div className="item__price">MRP Rs.{data.price}</div>
         <CustomButton onClick={addToCart}>Buy Now</CustomButton>
       </div>
-      <div className="tablet-footer">
+      <div className="item__tablet-footer">
         <CustomButton
-          classes="mobile-btn"
+          classes="item__mobile-btn"
           onClick={addToCart}
         >{`Buy Now @ Rs.${data.price}`}</CustomButton>
       </div>

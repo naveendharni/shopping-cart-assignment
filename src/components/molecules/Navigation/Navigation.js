@@ -4,10 +4,10 @@ import NavLink from "components/atoms/Links/Links";
 const Navigation = () => {
   return (
     <Container>
-      <NavLink classes="links" url="/home">
+      <NavLink classes="nav__links" url="/home">
         Home
       </NavLink>
-      <NavLink classes="links" url="/products">
+      <NavLink classes="nav__links" url="/products">
         Products
       </NavLink>
     </Container>

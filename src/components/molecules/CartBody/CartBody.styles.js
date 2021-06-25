@@ -13,7 +13,7 @@ export const LowPrice = styled.div`
   font-size: 0.8rem;
   display: flex;
   align-items: center;
-  .low-img {
+  .low__img {
     width: 25%;
     margin-right: 0.5rem;
   }

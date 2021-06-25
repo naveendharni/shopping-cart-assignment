@@ -5,7 +5,7 @@ export const Container = styled.nav`
   position: relative;
   right: 8rem;
   bottom: 1rem;
-  .links {
+  .nav__links {
     text-decoration: none;
     color: grey;
     font-weight: 600;
@@ -13,6 +13,5 @@ export const Container = styled.nav`
   }
   @media (max-width: ${breakPoints.mobileBreak}) {
     right: 1rem;
-    /* display: none; */
   }
 `;

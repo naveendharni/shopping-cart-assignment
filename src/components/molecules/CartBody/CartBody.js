@@ -11,7 +11,7 @@ const CartBody = ({ data }) => {
         <ProductCard key={data[item].id} data={data[item]} />
       ))}
       <LowPrice>
-        <Images className="low-img" src={Low} alt="low-price" />
+        <Images className="low__img" src={Low} alt="low-price" />
         <span>You won&apos;t find it cheaper anywhere</span>
       </LowPrice>
     </Container>

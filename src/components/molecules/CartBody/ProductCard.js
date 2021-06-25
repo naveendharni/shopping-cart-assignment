@@ -16,18 +16,18 @@ const ProductCard = ({ data }) => {
     <CartProduct key={data.id}>
       <Images src={image} alt={data.name} loading="lazy" />
 
-      <div className="details">
-        <div className="item-name">{data.name}</div>
-        <div className="item-quantity">
-          <button className="btn" onClick={remove}>
+      <div className="card">
+        <div className="card__name">{data.name}</div>
+        <div className="card__quantity">
+          <button className="card__btn" onClick={remove}>
             -
           </button>
-          <span className="total-item">{data.totalItem}</span>
-          <button className="btn" onClick={add}>
+          <span className="card__total-item">{data.totalItem}</span>
+          <button className="card__btn" onClick={add}>
             +
           </button>
-          <span className="times">&#10006;</span>
-          <span className="price">Rs.{data.price}</span>
+          <span className="card__times">&#10006;</span>
+          <span className="card__price">Rs.{data.price}</span>
         </div>
       </div>
 

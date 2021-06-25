@@ -7,13 +7,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  .no-item {
+  .container__no-item {
     text-align: center;
-    div {
+    .container__heading {
       font-size: 0.8rem;
     }
   }
-  .shopping {
+  .container__shopping {
     position: absolute;
     bottom: 0.5rem;
     width: 90%;

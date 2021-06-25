@@ -9,22 +9,22 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #d3d3d3;
-  .title {
+  .container__title {
     font-size: 0.8rem;
     font-weight: 600;
-    .items {
+    .container__items {
       font-size: 0.6rem;
       font-weight: 400;
     }
   }
-  .close-cart {
+  .container__close-cart {
     font-size: 0.8rem;
     cursor: pointer;
   }
   @media (max-width: ${breakPoints.tabletBreak}) {
     background-color: var(--white-color);
     color: #000000;
-    .close-cart {
+    .container__close-cart {
       display: none;
     }
   }

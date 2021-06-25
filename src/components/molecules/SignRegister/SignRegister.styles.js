@@ -5,7 +5,7 @@ export const Container = styled.nav`
   position: absolute;
   right: 12.5rem;
   top: 0;
-  .links {
+  .container__links {
     font-size: 0.75rem;
     font-weight: 600;
     text-decoration: none;
