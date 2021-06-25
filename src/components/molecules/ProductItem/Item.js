@@ -1,4 +1,3 @@
-// import { memo } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "store/cart/cartSlice";
 import Images from "components/atoms/Image/Images";
@@ -24,7 +23,7 @@ const Item = ({ data }) => {
       </div>
       <div className="product-footer">
         <div className="price">MRP Rs.{data.price}</div>
-        <CustomButton onClick={addToCart} title="Buy Now" />
+        <CustomButton onClick={addToCart}>Buy Now</CustomButton>
       </div>
       <BuyBtn view="tablet" addToCart={addToCart} price={data.price} />
     </Container>
@@ -36,8 +35,7 @@ export const BuyBtn = ({ view, addToCart, price }) => (
     <CustomButton
       classes="mobile-btn"
       onClick={addToCart}
-      title={`Buy Now @ Rs.${price}`}
-    />
+    >{`Buy Now @ Rs.${price}`}</CustomButton>
   </div>
 );
 

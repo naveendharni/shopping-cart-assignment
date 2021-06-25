@@ -115,7 +115,7 @@ const SignUpBody = () => {
           )}
 
           {commonErr && <div className="common-err">{commonErr}</div>}
-          <CustomButton title="Signup" />
+          <CustomButton>Signup</CustomButton>
         </form>
       </RightBody>
     </Container>

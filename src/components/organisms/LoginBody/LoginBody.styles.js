@@ -11,7 +11,7 @@ export const Container = styled.div`
   justify-content: center;
   margin-bottom: 2rem;
   @media (max-width: ${breakPoints.mobileBreak}) {
-    flex-direction: var(--fd);
+    flex-direction: column;
     align-items: center;
   }
 `;

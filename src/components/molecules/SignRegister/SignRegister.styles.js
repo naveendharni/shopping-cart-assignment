@@ -16,7 +16,4 @@ export const Container = styled.nav`
   @media (max-width: ${breakPoints.tabletBreak}) {
     right: 0;
   }
-  @media (max-width: ${breakPoints.mobileBreak}) {
-    display: none;
-  }
 `;

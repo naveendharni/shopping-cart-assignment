@@ -1,4 +1,3 @@
-// import { memo } from "react";
 import { useSelector } from "react-redux";
 import { Container, CategoryItem } from "./Sidebar.styles";
 

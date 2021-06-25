@@ -14,7 +14,7 @@ const CategoryItem = ({ item, index }) => {
       <div className="detail-container">
         <div className="detail-name">{item.name}</div>
         <Description className="detail-desc">{item.description}</Description>
-        <CustomButton title={`Explore ${item.key}`} classes="home-btn" />
+        <CustomButton classes="home-btn">{`Explore ${item.key}`}</CustomButton>
       </div>
     </CategoryRow>
   );

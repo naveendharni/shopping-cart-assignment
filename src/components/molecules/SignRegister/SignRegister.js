@@ -1,15 +1,14 @@
-// // import { memo } from "react";
+import { useSelector } from "react-redux";
 import { Container } from "./SignRegister.styles";
 import { signOut } from "helpers/saveUser";
 import NavLink from "components/atoms/Links/Links";
 
 const SignRegister = () => {
-  const isAuthenticated = localStorage.getItem("user");
+  const { isUser } = useSelector((state) => state.cart);
 
-  console.log({ isAuthenticated });
   return (
     <Container>
-      {isAuthenticated ? (
+      {isUser ? (
         <div className="links" onClick={signOut}>
           SignOut
         </div>

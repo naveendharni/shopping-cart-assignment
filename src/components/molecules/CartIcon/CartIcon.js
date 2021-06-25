@@ -1,4 +1,3 @@
-// // import { memo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "store/cart/cartSlice";
 import Images from "components/atoms/Image/Images";

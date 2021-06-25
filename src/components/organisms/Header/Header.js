@@ -1,4 +1,3 @@
-// import { memo } from "react";
 import Navigation from "components/molecules/Navigation/Navigation";
 import CartIcon from "components/molecules/CartIcon/CartIcon";
 import SignRegister from "components/molecules/SignRegister/SignRegister";

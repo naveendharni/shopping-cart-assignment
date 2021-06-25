@@ -8,11 +8,9 @@ const NoItem = ({ closeCart }) => {
         <h4>No items in your cart</h4>
         <div>Your favourite items are just a click away</div>
       </div>
-      <CustomButton
-        title="Start Shopping"
-        classes="shopping"
-        onClick={closeCart}
-      />
+      <CustomButton classes="shopping" onClick={closeCart}>
+        Start Shopping
+      </CustomButton>
     </Container>
   );
 };

@@ -1,6 +1,6 @@
 import Button from "@material-ui/core/Button";
 
-const CustomButton = ({ title, classes, onClick }) => {
+const CustomButton = ({ children, classes, onClick }) => {
   return (
     <Button
       className={`confirm-btn ${classes ? classes : ""}`}
@@ -9,7 +9,7 @@ const CustomButton = ({ title, classes, onClick }) => {
       type="submit"
       onClick={onClick}
     >
-      {title}
+      {children}
     </Button>
   );
 };
