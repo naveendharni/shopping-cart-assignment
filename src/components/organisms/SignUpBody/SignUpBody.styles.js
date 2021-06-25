@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const RightBody = styled.div`
   margin-left: 5rem;
   width: 25%;
-  .right-body {
+  .right-body__form {
     display: flex;
     flex-direction: column;
     .MuiFormControl-root {

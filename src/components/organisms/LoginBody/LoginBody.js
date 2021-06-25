@@ -22,7 +22,7 @@ const LoginBody = () => {
         description="Get access to your Orders, Wishlist & Recommendations"
       />
       <RightBody>
-        <form className="right-body" onSubmit={handleSubmit(onSubmit)}>
+        <form className="right-body__form" onSubmit={handleSubmit(onSubmit)}>
           <Controller
             name="email"
             control={control}

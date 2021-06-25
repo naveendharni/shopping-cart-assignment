@@ -31,7 +31,7 @@ const SignUpBody = () => {
         description="We do not share your personal details with anyone"
       />
       <RightBody>
-        <form className="right-body" onSubmit={handleSubmit(onSubmit)}>
+        <form className="right-body__form" onSubmit={handleSubmit(onSubmit)}>
           <Controller
             name="first_name"
             control={control}
