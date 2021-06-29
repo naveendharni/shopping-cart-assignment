@@ -6,4 +6,10 @@ export const Container = styled.div`
   @media (max-width: ${breakPoints.tabletBreak}) {
     margin: 90px 0;
   }
+  .carousel .control-dots .dot {
+    background: #423c3c;
+  }
+  .carousel.carousel-slider .control-arrow {
+    background: rgba(0, 0, 0, 0.4);
+  }
 `;
