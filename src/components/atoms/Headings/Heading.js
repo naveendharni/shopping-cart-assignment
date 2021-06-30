@@ -1,5 +1,7 @@
-const Heading = ({ children }) => {
-  return <h2 data-testid="page-name">{children}</h2>;
+const Heading = ({ children, type }) => {
+  const Type = type;
+  return <Type>{children}</Type>;
+  // return <h2>{children}</h2>
 };
 
 export default Heading;
